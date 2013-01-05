@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/00_load.t
+t/01_methods.t
+lib/Template/Plugin/Octets.pm
