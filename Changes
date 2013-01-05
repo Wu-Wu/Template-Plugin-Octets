@@ -1,5 +1,9 @@
 Revision history for Perl extension Template::Plugin::Octets.
 
+0.16  Sat Jan  5 09:55:23 2013
+    - updated pod
+    - fixed typos
+
 0.15  Sat Jan  5 07:28:49 2013
 	- import to repo
 

@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base 'Template::Plugin::Procedural';
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use constant KIBIO_DIV => 1024;            # 1 KBio
 use constant MIBIO_DIV => 1024*1024;       # 1 MBio
@@ -20,7 +20,7 @@ sub kio { _formatter(KIBIO_DIV, $_[0]) }
 sub mio { _formatter(MIBIO_DIV, $_[0]) }
 
 #
-# gigioctets
+# gibioctets
 sub gio { _formatter(GIBIO_DIV, $_[0]) }
 
 #
@@ -41,16 +41,26 @@ __END__
 
 =head1 NAME
 
-Template::Plugin::Octets - Format numeric values as binary octets
+Template::Plugin::Octets - TT2 plugin to format numeric values as binary octets
 
 =head1 VERSION
 
-version 0.15
+version 0.16
 
 =head1 SYNOPSIS
 
-    [% USE Octets -%]
-    [% Octets.mio(bytes_recv) %]
+    [% USE Octets %]
+
+    Xmit [% Octets.kio(100500) -%] Kio
+    Recv [% Octets.mio(9000) -%] Mio
+
+    # Output:
+    # Xmit 98.1 Kio
+    # Recv ~0 Mio
+
+=head1 DESCRIPTION
+
+Template::Plugin::Octets is a plugin for Template Toolkit v2, which allows you to format numbers in templates.
 
 =head1 METHODS
 
@@ -58,15 +68,15 @@ version 0.15
 
 =item B<kio>
 
-Format value to kibioctets (2^10 octets).
+Format value as kibioctets (2^10 octets).
 
 =item B<mio>
 
-Format value to mebioctets (2^20 octets).
+Format value as mebioctets (2^20 octets).
 
 =item B<gio>
 
-Format value to gibioctets (2^30 octets).
+Format value as gibioctets (2^30 octets).
 
 =back
 
