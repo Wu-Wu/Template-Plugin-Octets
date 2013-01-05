@@ -1,5 +1,5 @@
 NAME
-    Template::Plugin::Octets - Format numeric value as binary octets
+    Template::Plugin::Octets - Format numeric values as binary octets
 
 VERSION
     version 0.15
@@ -7,11 +7,6 @@ VERSION
 SYNOPSIS
         [% USE Octets -%]
         [% Octets.mio(bytes_recv) %]
-
-DESCRIPTION
-    Stub documentation for Template::Plugin::Octets, created by h2xs. It
-    looks like the author of the extension was negligent enough to leave the
-    stub unedited.
 
 METHODS
     kio Format value to kibioctets (2^10 octets).

@@ -41,7 +41,7 @@ __END__
 
 =head1 NAME
 
-Template::Plugin::Octets - Format numeric value as binary octets
+Template::Plugin::Octets - Format numeric values as binary octets
 
 =head1 VERSION
 
@@ -51,12 +51,6 @@ version 0.15
 
     [% USE Octets -%]
     [% Octets.mio(bytes_recv) %]
-
-=head1 DESCRIPTION
-
-Stub documentation for Template::Plugin::Octets, created by h2xs. It looks like the
-author of the extension was negligent enough to leave the stub
-unedited.
 
 =head1 METHODS
 
