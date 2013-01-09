@@ -3,7 +3,7 @@ NAME
     octets
 
 VERSION
-    version 0.16
+    version 0.17
 
 SYNOPSIS
         [% USE Octets %]
