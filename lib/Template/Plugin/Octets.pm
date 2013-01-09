@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base 'Template::Plugin::Procedural';
 
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 use constant KIBIO_DIV => 1024;            # 1 KBio
 use constant MIBIO_DIV => 1024*1024;       # 1 MBio
@@ -45,7 +45,7 @@ Template::Plugin::Octets - TT2 plugin to format numeric values as binary octets
 
 =head1 VERSION
 
-version 0.16
+version 0.17
 
 =head1 SYNOPSIS
 
@@ -61,6 +61,11 @@ version 0.16
 =head1 DESCRIPTION
 
 Template::Plugin::Octets is a plugin for Template Toolkit v2, which allows you to format numbers in templates.
+Try to run
+
+    tpage eg/traffic.tt
+
+to see it in action.
 
 =head1 METHODS
 

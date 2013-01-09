@@ -17,7 +17,11 @@ SYNOPSIS
 
 DESCRIPTION
     Template::Plugin::Octets is a plugin for Template Toolkit v2, which
-    allows you to format numbers in templates.
+    allows you to format numbers in templates. Try to run
+
+        tpage eg/traffic.tt
+
+    to see it in action.
 
 METHODS
     kio Format value as kibioctets (2^10 octets).
