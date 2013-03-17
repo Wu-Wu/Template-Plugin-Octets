@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 use Template::Test;
 use Template::Plugin::Octets;
 

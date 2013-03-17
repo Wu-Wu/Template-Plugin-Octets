@@ -1,9 +1,0 @@
-Changes
-Makefile.PL
-MANIFEST
-README
-eg/traffic.tt
-t/00_load.t
-t/01_methods.t
-t/99_pod.t
-lib/Template/Plugin/Octets.pm
