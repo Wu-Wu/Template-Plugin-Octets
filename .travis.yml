@@ -8,6 +8,8 @@ perl:
 
 before_install:
     - "cpanm -q -n Dist::Zilla::PluginBundle::Author::CHIM"
+    - "cpanm -q -n Test::CPAN::Meta"
+    - "cpanm -q -n Pod::Coverage::TrustPod"
 
 install:
     - "dzil authordeps | xargs cpanm -q -n && dzil listdeps | xargs cpanm -q -n"
